@@ -2,19 +2,19 @@
 
 The plugin allows you to open OS settings on iOS 8/9 and Android, via cordova-based app. For example, it will allow you to open the keyboard settings, Wifi, bluetooth etc (full list below).
 
-** NO SUPPORT FOR IOS 10 SINCE APPLE DISABLED THIS FUNCTIONALITY **
+Support for iOS 10 is speculative -- app URL schemes might no longer be accepted by Apple app store. See: http://stackoverflow.com/questions/39782510/open-wifi-settings-by-prefsroot-wifi-failed-in-ios-10
 
 ##Adding/Removing the Plugin 
 It will be saved to the config.xml file
 
 ```bash
-cordova plugin (add|rm) https://github.com/guyromb/Cordova-open-native-settings.git --save
+cordova plugin (add|rm) https://github.com/estanall/Cordova-open-native-settings.git --save
 ```
 
 or via npm (It will be saved to the package.json file)
 
 ```bash
-npm (install|rm) https://github.com/guyromb/Cordova-open-native-settings.git --save
+npm (install|rm) https://github.com/estanall/Cordova-open-native-settings.git --save
 ```
 
 ##Using the plugin (opens Location Settings in Android and Application Settings in iOS)
@@ -121,7 +121,7 @@ You can use any constant from the following list:
 * Android plugin based on the following information: https://developer.android.com/reference/android/provider/Settings.html#ACTION_DREAM_SETTINGS
 * iOS plugin based on the following information: https://gist.github.com/phynet/471089a51b8f940f0fb4
 * In iOS, this plugin generates a URL scheme for the *-Info.plist configurations file.
-* The plugin for Android is based on the forked repository and was refactored. The iOS part was built from skretch.
+* The plugin for Android is based on the forked repository and was refactored. The iOS part was built from scratch.
 
 ##License
 ```

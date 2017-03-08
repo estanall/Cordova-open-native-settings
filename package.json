@@ -1,7 +1,7 @@
 {
   "name": "nativesettingsopener",
-  "version": "1.2",
-  "description": "Native settings opener for Cordova 3.0",
+  "version": "1.4",
+  "description": "Native settings opener for Cordova 4.0",
   "cordova": {
     "id": "com.phonegap.plugins.nativesettingsopener",
     "platforms": [
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guyromb/Cordova-open-native-settings"
+    "url": "git+https://github.com/estanall/Cordova-open-native-settings"
   },
   "keywords": [
     "native-settings",
@@ -22,11 +22,13 @@
   "engines": [
     {
       "name": "cordova",
-      "version": ">=3.0.0"
+      "version": ">=4.0.0"
     }
   ],
-  "author": "Guy Rombaut <admin@gsrweb.net>",
   "contributors": [
+    {
+      "username": "estanall",
+    },
     {
       "username": "guyromb"
     },
@@ -45,7 +47,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guyromb/Cordova-open-native-settings/issues"
+    "url": "https://github.com/estanall/Cordova-open-native-settings/issues"
   },
-  "homepage": "https://github.com/guyromb/Cordova-open-native-settings#readme"
+  "homepage": "https://github.com/estanall/Cordova-open-native-settings#readme"
 }
