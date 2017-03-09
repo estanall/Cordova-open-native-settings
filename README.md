@@ -4,17 +4,22 @@ The plugin allows you to open OS settings on iOS 8/9 and Android, via cordova-ba
 
 Support for iOS 10 is speculative -- app URL schemes might no longer be accepted by Apple app store. See: http://stackoverflow.com/questions/39782510/open-wifi-settings-by-prefsroot-wifi-failed-in-ios-10
 
-##Adding/Removing the Plugin 
-It will be saved to the config.xml file
+##Adding the Plugin
 
 ```bash
-cordova plugin (add|rm) https://github.com/estanall/Cordova-open-native-settings.git --save
+cordova plugin add https://github.com/estanall/Cordova-open-native-settings.git
 ```
 
 or via npm (It will be saved to the package.json file)
 
 ```bash
-npm (install|rm) https://github.com/estanall/Cordova-open-native-settings.git --save
+npm install https://github.com/estanall/Cordova-open-native-settings.git
+```
+
+##Removing the Plugin
+
+```bash
+cordova plugin rm com.phonegap.plugins.nativesettingsopener
 ```
 
 ##Using the plugin (opens Location Settings in Android and Application Settings in iOS)
