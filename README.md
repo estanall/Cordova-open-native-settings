@@ -27,13 +27,11 @@ cordova.plugins.settings.open(setting_constant, success_callback, failure_callba
 ```js
 if (window.cordova && window.cordova.plugins.settings) {
     console.log('openNativeSettingsTest is active');
-    window.cordova.plugins.settings.open("wifi", function() {
-            console.log('opened settings');
-        },
-        function () {
-            console.log('failed to open settings');
-        }
-    );
+    window.cordova.plugins.settings.open("wifi", function(info) {
+        console.log('opened settings: ' + JSON.stringify(info));
+    }, function (err) {
+        console.log('failed to open settings: ' + JSON.stringify(err));
+    });
 } else {
     console.log('openNativeSettingsTest is not active!');
 }
