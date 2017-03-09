@@ -10,12 +10,6 @@ Support for iOS 10 is speculative -- app URL schemes might no longer be accepted
 cordova plugin add https://github.com/estanall/Cordova-open-native-settings.git
 ```
 
-or via npm (It will be saved to the package.json file)
-
-```bash
-npm install https://github.com/estanall/Cordova-open-native-settings.git
-```
-
 ##Removing the Plugin
 
 ```bash
